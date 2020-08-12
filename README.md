@@ -1,4 +1,4 @@
-# api-solid
-Estudando os conceitos de SOLID em uma API REST utilizando NodeJS e Typescript.
+# API-SOLID
+Repository created in order to facilitate the creation of a basic structure of an API using the principles of SOLID.
 
-### Em produção!
+### In production!
