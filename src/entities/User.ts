@@ -1,3 +1,5 @@
+import { uuid } from 'uuidv4';
+
 export class User {
   public readonly id: string;
 
@@ -6,6 +8,11 @@ export class User {
   public password: string;
 
   constructor (props: Omit<User, 'id'>, id?: string) {
-    
+    Object.assign(this, props);
+
+    // Dica: criar um id autômatico, sem deixar pro DB fazer!
+    if(!id) {
+      this.id = uuid();
+    }
   }
 }
